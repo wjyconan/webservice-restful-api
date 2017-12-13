@@ -1,0 +1,1998 @@
+<?xml version="1.0" encoding="UTF-8"?><definitions
+ xmlns="http://schemas.xmlsoap.org/wsdl/"
+ xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/"
+ xmlns:xsdLocal1="http://www.siebel.com/xml/APP%20For%20GSIS%20Package%20IO"
+ targetNamespace="http://siebel.com/asi/"
+ xmlns:xsdLocal3="http://www.siebel.com/xml/SPI%20APP%20Query%20Service%20Request%20Info"
+ xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/"
+ xmlns:xsdLocal2="http://www.siebel.com/xml/SPI%20APP%20Service%20Request%20Attachment%20IO"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+ xmlns:tns="http://siebel.com/asi/"
+><types
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ xmlns:xsdLocal1="http://www.siebel.com/xml/APP%20For%20GSIS%20Package%20IO"
+ targetNamespace="http://www.siebel.com/xml/APP%20For%20GSIS%20Package%20IO"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:annotation
+><xsd:documentation
+>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation
+></xsd:annotation
+><xsd:element
+ name="ListOfAppForGsisPackageIo"
+ type="xsdLocal1:ListOfAppForGsisPackageIo"
+></xsd:element
+><xsd:complexType
+ name="ListOfAppForGsisPackageIoTopElmt"
+><xsd:sequence
+><xsd:element
+ name="ListOfAppForGsisPackageIo"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsdLocal1:ListOfAppForGsisPackageIo"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfAppForGsisPackageIo"
+><xsd:sequence
+><xsd:element
+ name="AppForGsisPackage"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal1:AppForGsisPackage"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="AppForGsisPackage"
+><xsd:sequence
+><xsd:element
+ name="ActivityComments"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityFileExt"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityFileName"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityFileSize"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityVersions"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityFileBuffer"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:base64Binary"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:schema
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="http://www.siebel.com/xml/SPI%20APP%20Service%20Request%20Attachment%20IO"
+ xmlns:xsdLocal2="http://www.siebel.com/xml/SPI%20APP%20Service%20Request%20Attachment%20IO"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:annotation
+><xsd:documentation
+>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation
+></xsd:annotation
+><xsd:element
+ name="SPIAPPServiceRequestAttachmentIO"
+ type="xsdLocal2:SPIAPPServiceRequestAttachmentIO"
+></xsd:element
+><xsd:complexType
+ name="SPIAPPServiceRequestAttachmentIOTopElmt"
+><xsd:sequence
+><xsd:element
+ name="SPIAPPServiceRequestAttachmentIO"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsdLocal2:SPIAPPServiceRequestAttachmentIO"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="SPIAPPServiceRequestAttachmentIO"
+><xsd:sequence
+><xsd:element
+ name="ServiceRequest"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:ServiceRequest"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ServiceRequest"
+><xsd:sequence
+><xsd:element
+ name="SPISRNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Id"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ListOfServiceRequestAttachments"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal2:ListOfServiceRequestAttachments"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfServiceRequestAttachments"
+><xsd:sequence
+><xsd:element
+ name="ServiceRequestAttachment"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal2:ServiceRequestAttachment"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ServiceRequestAttachment"
+><xsd:sequence
+><xsd:element
+ name="SPIAttType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityFileBuffer"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:base64Binary"
+></xsd:element
+><xsd:element
+ name="CreatedTime"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityFileExt"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityDocumentName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityAttachmentURL"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityId"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityCreatedByName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityDockStatus"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityFileSrcType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ActivityUpdatedByName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="UpdatedTime"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:schema
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="http://siebel.com/asi/"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:import
+ namespace="http://www.siebel.com/xml/SPI%20APP%20Query%20Service%20Request%20Info"
+></xsd:import
+><xsd:import
+ namespace="http://www.siebel.com/xml/SPI%20APP%20Service%20Request%20Attachment%20IO"
+></xsd:import
+><xsd:import
+ namespace="http://www.siebel.com/xml/APP%20For%20GSIS%20Package%20IO"
+></xsd:import
+><xsd:element
+ name="ValidationVersionsNo_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="PackageType"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="VersionsNo"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="ValidationVersionsNo_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal1:ListOfAppForGsisPackageIo"
+></xsd:element
+><xsd:element
+ name="Updatecode"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="siebelMessage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRAttachment_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ServiceRequestNumber"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRAttachment_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal2:SPIAPPServiceRequestAttachmentIO"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QueryNoBOMPartDetail_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="SRNUM"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartCode"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QueryNoBOMPartDetail_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:element
+ name="siebelMessage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRPartDetail_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartCode"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ServiceRequestNumber"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRPartDetail_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:element
+ name="TotalPage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="ValidationSatisfactionCode_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="SRNumber"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SatisfactionCode"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="ValidationSatisfactionCode_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ValidationMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ValidationStatus"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="siebelMessage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRDetail_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ServiceRequestNumber"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRDetail_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRList_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="SRNumber"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SRStatus"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Page"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SNNumber"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PageQty"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderRule"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderType"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="L3"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRList_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:element
+ name="TotalPage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRPartConsume_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Page"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PageQTY"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderBy"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ServiceRequestNumber"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRPartConsume_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:element
+ name="TotalPage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRCharge_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Page"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PageQTY"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderBy"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ServiceRequestNumber"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRCharge_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:element
+ name="TotalPage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRNOBOMDetail_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="SRNUM"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Page"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PageQty"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartCode"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRNOBOMDetail_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:element
+ name="TotalPage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="siebelMessage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="DeleteSRAttachment_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="FileName"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ServiceRequestNumber"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="DeleteSRAttachment_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="GetSRAttachment_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal2:SPIAPPServiceRequestAttachmentIO"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="GetSRAttachment_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="UpdateSR_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="UpdateSR_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="SiebelMessage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRBOM_Input"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="EnginnerId"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Page"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PageQTY"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderBy"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ServiceRequestNumber"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartCode"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+><xsd:element
+ name="QuerySRBOM_Output"
+><xsd:complexType
+><xsd:sequence
+><xsd:element
+ name="ErrorMessage"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ ref="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:element
+ name="TotalPage"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:element
+></xsd:schema
+><xsd:schema
+ elementFormDefault="qualified"
+ attributeFormDefault="unqualified"
+ targetNamespace="http://www.siebel.com/xml/SPI%20APP%20Query%20Service%20Request%20Info"
+ xmlns:xsdLocal3="http://www.siebel.com/xml/SPI%20APP%20Query%20Service%20Request%20Info"
+ xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+><xsd:annotation
+><xsd:documentation
+>Copyright (C) 2001-2004 Siebel Systems, Inc. All rights reserved. Siebel XSD Generation</xsd:documentation
+></xsd:annotation
+><xsd:element
+ name="SpiAppServiceRequestInfoIo"
+ type="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+><xsd:complexType
+ name="SpiAppServiceRequestInfoIoTopElmt"
+><xsd:sequence
+><xsd:element
+ name="SpiAppServiceRequestInfoIo"
+ maxOccurs="1"
+ minOccurs="1"
+ type="xsdLocal3:SpiAppServiceRequestInfoIo"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="SpiAppServiceRequestInfoIo"
+><xsd:sequence
+><xsd:element
+ name="ServiceRequest"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal3:ServiceRequest"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ServiceRequest"
+><xsd:sequence
+><xsd:element
+ name="ContactFullName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIServiceClass"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SubStatus"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPISatisfactionCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPILastAppointmentTime"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIFirstAppointmentTime"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="RejectReason"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="L2"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="L1"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Description"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIFreezerTemp"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIRefrigerationTemp"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIRunningAmpere"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIStartingAmpere"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIVoltage"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CurrencyCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Priority"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPICategoryX"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIContactDetailAddress"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIDispatchDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIReOpenFlag"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIRedispatch"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIReminderCount"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPISRNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Status"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Sub-Area"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ContactBusinessPhone"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ContactHomePhone"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Product"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIBrand"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPICFMainPhoneNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPICompletedDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIContactMobilePhone"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIDateofPurchase"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIDefect"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIDefectDescription"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIDefectParts"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIProdName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIRepair"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIRepairStartTime"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIRequiredServiceDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIServiceDescription"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIServiceType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPISymptom"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIWarranty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SerialNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ListOfSPIRelatedServiceBillOfMaterial"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal3:ListOfSPIRelatedServiceBillOfMaterial"
+></xsd:element
+><xsd:element
+ name="ListOfFSCharge"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal3:ListOfFSCharge"
+></xsd:element
+><xsd:element
+ name="ListOfSpiSrPartss"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal3:ListOfSpiSrPartss"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfSPIRelatedServiceBillOfMaterial"
+><xsd:sequence
+><xsd:element
+ name="SPIRelatedServiceBillOfMaterial"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal3:SPIRelatedServiceBillOfMaterial"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="SPIRelatedServiceBillOfMaterial"
+><xsd:sequence
+><xsd:element
+ name="Qty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SparePartPriceType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SparePartPrice"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SparePartSCAvaiableQty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SparePartEnginnerAvaiableQty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SparePartName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="LocalSparePartName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SparePartCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="HaierFactoryCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OtherFactoryCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EX-VLocationNo."
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ListOfSPIProductPartChain"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsdLocal3:ListOfSPIProductPartChain"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfFSCharge"
+><xsd:sequence
+><xsd:element
+ name="FSCharge"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal3:FSCharge"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="FSCharge"
+><xsd:sequence
+><xsd:element
+ name="CurrencyCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPITotalPay-inAmount"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIDiscountAmount"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPISRPartName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SparePartName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPISRPartDesc"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIDiscount"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Amount"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SPIChargeType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfSpiSrPartss"
+><xsd:sequence
+><xsd:element
+ name="SPISRParts"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal3:SPISRParts"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="SPISRParts"
+><xsd:sequence
+><xsd:element
+ name="Part"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Warranty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PickQTY"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderNumber"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderQty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="OrderStatus"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ReturnPart"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ConsumedQty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ConsumedFlag"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ConsumedDate"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="CurrencyCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="RequiredQTY"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="Price"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PickInventorySumQty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="ListOfSPIProductPartChain"
+><xsd:sequence
+><xsd:element
+ name="SPIProductPartChain"
+ maxOccurs="unbounded"
+ minOccurs="0"
+ type="xsdLocal3:SPIProductPartChain"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+><xsd:complexType
+ name="SPIProductPartChain"
+><xsd:sequence
+><xsd:element
+ name="Qty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartPriceType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartPrice"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="SCOnHandQty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="EnginnerOnHandQty"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="PartName"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="ProductCode"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+><xsd:element
+ name="RelationType"
+ maxOccurs="1"
+ minOccurs="0"
+ type="xsd:string"
+></xsd:element
+></xsd:sequence
+></xsd:complexType
+></xsd:schema
+></types
+><message
+ name="ValidationVersionsNo_Input"
+><part
+ name="ValidationVersionsNo_Input"
+ element="tns:ValidationVersionsNo_Input"
+></part
+></message
+><message
+ name="ValidationVersionsNo_Output"
+><part
+ name="ValidationVersionsNo_Output"
+ element="tns:ValidationVersionsNo_Output"
+></part
+></message
+><message
+ name="QuerySRAttachment_Input"
+><part
+ name="QuerySRAttachment_Input"
+ element="tns:QuerySRAttachment_Input"
+></part
+></message
+><message
+ name="QuerySRAttachment_Output"
+><part
+ name="QuerySRAttachment_Output"
+ element="tns:QuerySRAttachment_Output"
+></part
+></message
+><message
+ name="QueryNoBOMPartDetail_Input"
+><part
+ name="QueryNoBOMPartDetail_Input"
+ element="tns:QueryNoBOMPartDetail_Input"
+></part
+></message
+><message
+ name="QueryNoBOMPartDetail_Output"
+><part
+ name="QueryNoBOMPartDetail_Output"
+ element="tns:QueryNoBOMPartDetail_Output"
+></part
+></message
+><message
+ name="QuerySRPartDetail_Input"
+><part
+ name="QuerySRPartDetail_Input"
+ element="tns:QuerySRPartDetail_Input"
+></part
+></message
+><message
+ name="QuerySRPartDetail_Output"
+><part
+ name="QuerySRPartDetail_Output"
+ element="tns:QuerySRPartDetail_Output"
+></part
+></message
+><message
+ name="ValidationSatisfactionCode_Input"
+><part
+ name="ValidationSatisfactionCode_Input"
+ element="tns:ValidationSatisfactionCode_Input"
+></part
+></message
+><message
+ name="ValidationSatisfactionCode_Output"
+><part
+ name="ValidationSatisfactionCode_Output"
+ element="tns:ValidationSatisfactionCode_Output"
+></part
+></message
+><message
+ name="QuerySRDetail_Input"
+><part
+ name="QuerySRDetail_Input"
+ element="tns:QuerySRDetail_Input"
+></part
+></message
+><message
+ name="QuerySRDetail_Output"
+><part
+ name="QuerySRDetail_Output"
+ element="tns:QuerySRDetail_Output"
+></part
+></message
+><message
+ name="QuerySRList_Input"
+><part
+ name="QuerySRList_Input"
+ element="tns:QuerySRList_Input"
+></part
+></message
+><message
+ name="QuerySRList_Output"
+><part
+ name="QuerySRList_Output"
+ element="tns:QuerySRList_Output"
+></part
+></message
+><message
+ name="QuerySRPartConsume_Input"
+><part
+ name="QuerySRPartConsume_Input"
+ element="tns:QuerySRPartConsume_Input"
+></part
+></message
+><message
+ name="QuerySRPartConsume_Output"
+><part
+ name="QuerySRPartConsume_Output"
+ element="tns:QuerySRPartConsume_Output"
+></part
+></message
+><message
+ name="QuerySRCharge_Input"
+><part
+ name="QuerySRCharge_Input"
+ element="tns:QuerySRCharge_Input"
+></part
+></message
+><message
+ name="QuerySRCharge_Output"
+><part
+ name="QuerySRCharge_Output"
+ element="tns:QuerySRCharge_Output"
+></part
+></message
+><message
+ name="QuerySRNOBOMDetail_Input"
+><part
+ name="QuerySRNOBOMDetail_Input"
+ element="tns:QuerySRNOBOMDetail_Input"
+></part
+></message
+><message
+ name="QuerySRNOBOMDetail_Output"
+><part
+ name="QuerySRNOBOMDetail_Output"
+ element="tns:QuerySRNOBOMDetail_Output"
+></part
+></message
+><message
+ name="DeleteSRAttachment_Input"
+><part
+ name="DeleteSRAttachment_Input"
+ element="tns:DeleteSRAttachment_Input"
+></part
+></message
+><message
+ name="DeleteSRAttachment_Output"
+><part
+ name="DeleteSRAttachment_Output"
+ element="tns:DeleteSRAttachment_Output"
+></part
+></message
+><message
+ name="GetSRAttachment_Input"
+><part
+ name="GetSRAttachment_Input"
+ element="tns:GetSRAttachment_Input"
+></part
+></message
+><message
+ name="GetSRAttachment_Output"
+><part
+ name="GetSRAttachment_Output"
+ element="tns:GetSRAttachment_Output"
+></part
+></message
+><message
+ name="UpdateSR_Input"
+><part
+ name="UpdateSR_Input"
+ element="tns:UpdateSR_Input"
+></part
+></message
+><message
+ name="UpdateSR_Output"
+><part
+ name="UpdateSR_Output"
+ element="tns:UpdateSR_Output"
+></part
+></message
+><message
+ name="QuerySRBOM_Input"
+><part
+ name="QuerySRBOM_Input"
+ element="tns:QuerySRBOM_Input"
+></part
+></message
+><message
+ name="QuerySRBOM_Output"
+><part
+ name="QuerySRBOM_Output"
+ element="tns:QuerySRBOM_Output"
+></part
+></message
+><portType
+ name="App"
+><operation
+ name="ValidationVersionsNo"
+><input
+ message="tns:ValidationVersionsNo_Input"
+></input
+><output
+ message="tns:ValidationVersionsNo_Output"
+></output
+></operation
+><operation
+ name="QuerySRAttachment"
+><input
+ message="tns:QuerySRAttachment_Input"
+></input
+><output
+ message="tns:QuerySRAttachment_Output"
+></output
+></operation
+><operation
+ name="QueryNoBOMPartDetail"
+><input
+ message="tns:QueryNoBOMPartDetail_Input"
+></input
+><output
+ message="tns:QueryNoBOMPartDetail_Output"
+></output
+></operation
+><operation
+ name="QuerySRPartDetail"
+><input
+ message="tns:QuerySRPartDetail_Input"
+></input
+><output
+ message="tns:QuerySRPartDetail_Output"
+></output
+></operation
+><operation
+ name="ValidationSatisfactionCode"
+><input
+ message="tns:ValidationSatisfactionCode_Input"
+></input
+><output
+ message="tns:ValidationSatisfactionCode_Output"
+></output
+></operation
+><operation
+ name="QuerySRDetail"
+><input
+ message="tns:QuerySRDetail_Input"
+></input
+><output
+ message="tns:QuerySRDetail_Output"
+></output
+></operation
+><operation
+ name="QuerySRList"
+><input
+ message="tns:QuerySRList_Input"
+></input
+><output
+ message="tns:QuerySRList_Output"
+></output
+></operation
+><operation
+ name="QuerySRPartConsume"
+><input
+ message="tns:QuerySRPartConsume_Input"
+></input
+><output
+ message="tns:QuerySRPartConsume_Output"
+></output
+></operation
+><operation
+ name="QuerySRCharge"
+><input
+ message="tns:QuerySRCharge_Input"
+></input
+><output
+ message="tns:QuerySRCharge_Output"
+></output
+></operation
+><operation
+ name="QuerySRNOBOMDetail"
+><input
+ message="tns:QuerySRNOBOMDetail_Input"
+></input
+><output
+ message="tns:QuerySRNOBOMDetail_Output"
+></output
+></operation
+><operation
+ name="DeleteSRAttachment"
+><input
+ message="tns:DeleteSRAttachment_Input"
+></input
+><output
+ message="tns:DeleteSRAttachment_Output"
+></output
+></operation
+><operation
+ name="GetSRAttachment"
+><input
+ message="tns:GetSRAttachment_Input"
+></input
+><output
+ message="tns:GetSRAttachment_Output"
+></output
+></operation
+><operation
+ name="UpdateSR"
+><input
+ message="tns:UpdateSR_Input"
+></input
+><output
+ message="tns:UpdateSR_Output"
+></output
+></operation
+><operation
+ name="QuerySRBOM"
+><input
+ message="tns:QuerySRBOM_Input"
+></input
+><output
+ message="tns:QuerySRBOM_Output"
+></output
+></operation
+></portType
+><binding
+ name="App"
+ type="tns:App"
+><soap:binding
+ transport="http://schemas.xmlsoap.org/soap/http"
+ style="document"
+></soap:binding
+><operation
+ name="ValidationVersionsNo"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:ValidationVersionsNo"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRAttachment"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRAttachment"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QueryNoBOMPartDetail"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QueryNoBOMPartDetail"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRPartDetail"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRPartDetail"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="ValidationSatisfactionCode"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:ValidationSatisfactionCode"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRDetail"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRDetail"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRList"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRList"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRPartConsume"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRPartConsume"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRCharge"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRCharge"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRNOBOMDetail"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRNOBOMDetail"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="DeleteSRAttachment"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:DeleteSRAttachment"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="GetSRAttachment"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:GetSRAttachment"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="UpdateSR"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:UpdateSR"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+><operation
+ name="QuerySRBOM"
+><soap:operation
+ soapAction="document/http://siebel.com/asi/:QuerySRBOM"
+></soap:operation
+><input
+><soap:body
+ use="literal"
+></soap:body
+></input
+><output
+><soap:body
+ use="literal"
+></soap:body
+></output
+></operation
+></binding
+><service
+ name="SPI_spcAPP_spcQuery_spcService_spcInfo"
+><port
+ binding="tns:App"
+ name="App"
+><soap:address
+ location="http://10.135.108.148:7777/eai_enu/start.swe?SWEExtSource=WebService&amp;SWEExtCmd=Execute&amp;UserName=HPKEAIUSER&amp;Password=HPKEAIUSER"
+></soap:address
+></port
+></service
+></definitions
+>
